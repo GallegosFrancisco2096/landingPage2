@@ -1,12 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Francisco from './Components/Card';
+import Navbar from './Components/Navbar';
+import Jumbo from './Components/Jumbotron';
+import Footer from './Components/Footer'
+
+
+
 import reportWebVitals from './reportWebVitals';
+import './App.css';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Navbar />
+    <div className='d-flex justify-content-center'>
+    <Jumbo />
+    </div>
+
+    <div className="container-fluid row d-flex justify-content-center" >
+      <Francisco />
+      <Francisco />
+      <Francisco />
+      <Francisco />
+    </div>
+    <Footer/>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
